@@ -1,1 +1,19 @@
+import smtplib
+from email.mime.text import MIMEText
 
+def send_email(message):
+
+    sender = "your_email@gmail.com"
+    password = "your_password"
+    receiver = "client_email@gmail.com"
+
+    msg = MIMEText(message)
+    msg["Subject"] = "Price Drop Alert"
+
+    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server.starttls()
+    server.login(sender, password)
+
+    server.sendmail(sender, receiver, msg.as_string())
+
+    server.quit()
