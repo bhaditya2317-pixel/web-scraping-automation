@@ -1,2 +1,7 @@
-# web-scraping-automation
-Collection of Web Scraping and Automation projects using Python, Selenium, BeautifulSoup, and APIs.
+This project tracks competitor product prices automatically.
+
+Features
+- Scrapes product information
+- Tracks price changes
+- Stores historical price data
+- Sends alert when price drops
